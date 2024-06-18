@@ -1,0 +1,109 @@
+/* 
+  This file only sets the accent/theme/colors/vibe for the tenant loaded via tenant-config API.
+  Everything else is still used from astm-ux-design-bundle.
+  Please use the classes mentioned in the document hosted at 
+  https://patternlibrary.astm.org/?path=/story/documentation-getting-started--welcome
+  for all other things i.e Tables, Forms, Alerts, Tabs, etc.
+
+  Below document prepared by Viral Patel (Team Phoenix)
+*/
+
+:root {
+  /* Buttons */
+  /* Primary */
+  --astm-btn-bg-primary: #fdc92f;
+  --astm-btn-clr-primary: #232f3a;
+  --astm-btn-bg-primary-hover: #e3b42a;
+  --astm-btn-clr-primary-hover: #232f3a;
+
+  /* Secondary */
+  --astm-btn-bg-secondary: #005da4;
+  --astm-btn-clr-secondary: #fff;
+  --astm-btn-bg-secondary-hover: #005393;
+  --astm-btn-clr-secondary-hover: #fff;
+
+  /* Light */
+  --astm-btn-bg-light: #f4f4f5;
+  --astm-btn-clr-light: #232f3a;
+  --astm-btn-bg-light-hover: #e7e7e8;
+  --astm-btn-clr-light-hover: #212529;
+  /* =============================================== */
+
+  /* Backgrounds */
+  /* Primary */
+  --astm-bg-primary: #00355b;
+
+  /* Secondary */
+  --astm-bg-secondary: #005da4;
+
+  /* Light */
+  --astm-bg-light: #f4f4f5;
+  /* =============================================== */
+
+  /* Colors */
+  --astm-clr-white: #fff;
+
+  /* =============================================== */
+  /* Links */
+  --astm-link-primary: #005da4;
+  --astm-link-primary-hover: #0056b3;
+  --astm-link-primary-focus: #5fa0f7;
+
+}
+
+.astm-btn.btn-primary {
+	background: var(--astm-btn-bg-primary);
+	border: 0;
+	color: var(--astm-btn-clr-primary);
+}
+
+.astm-btn.btn-primary:hover, .astm-btn.btn-primary:focus, .astm-btn.btn-primary:not(:disabled):not(.disabled):active {
+  background: var(--astm-btn-bg-primary-hover);
+  color: var(--astm-btn-clr-primary-hover);
+}
+
+.astm-btn.btn-secondary {
+  background: var(--astm-btn-bg-secondary);
+  border: 0;
+  color: var(--astm-btn-clr-secondary);
+}
+
+.astm-btn.btn-secondary:hover, .astm-btn.btn-secondary:focus, .astm-btn.btn-secondary:not(:disabled):not(.disabled):active {
+  background: var(--astm-btn-bg-secondary-hover);
+  color: var(--astm-btn-clr-secondary-hover);
+}
+
+.astm-btn.btn-light {
+  background: var(--astm-btn-bg-light);
+  border: 0;
+  color: var(--astm-btn-clr-light);
+}
+
+.astm-btn.btn-light:hover, .astm-btn.btn-light:focus, .astm-btn.btn-light:not(:disabled):not(.disabled):active {
+  background: var(--astm-btn-bg-light-hover);
+  color: var(--astm-btn-clr-light-hover);
+}
+
+.bg-primary {
+	background-color: var(--astm-bg-primary) !important;
+	color: var(--astm-clr-white);
+}
+
+.bg-secondary {
+  background-color: var(--astm-bg-secondary) !important;
+	color: var(--astm-clr-white);
+}
+
+.astm-link {
+  color: var(--astm-link-primary);
+  text-decoration: none;
+}
+
+.astm-link:hover {
+  color: var(--astm-link-primary-hover);
+  text-decoration: underline;
+}
+
+.astm-link:focus {
+  outline: 2px solid var(--astm-link-primary-focus);
+}
